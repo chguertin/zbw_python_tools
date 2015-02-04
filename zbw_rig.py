@@ -26,7 +26,7 @@ def getSelection():
 
 def jointFromList(xformList=[], orient="xyz", secAxis="zup", strip="", suffix="", *args):
     """
-    uses the xformlist arg to create a joint chain in order.
+    uses the xformlist arg (a list of transforms in scene) to create a joint chain in order.
     Arguments: xformList (a list), orient ("xyz", etc), secAxis ("xup", "zdown", etc), strip (string to strip off), suffix (string to add to the joints)
     """
     jointList = []
