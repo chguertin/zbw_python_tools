@@ -5,7 +5,7 @@
 #date modified: 09/23/12
 #
 #notes: for checking and creating message attributes for objs in the scene (through UI).
-#to run: import zbw_messageMapper; zbw_messageMapper.zbw_messageMapper()
+#to run: import zbw_messageMapper; zbw_messageMapper.messageMapper()
 ########################
 
 import maya.cmds as cmds
