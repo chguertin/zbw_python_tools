@@ -168,6 +168,5 @@ def shapeScaleExecute(*args):
 
 def shapeScale():
     """Use this to start the script!"""
-
-	shapeScaleUI()
+    shapeScaleUI()
 

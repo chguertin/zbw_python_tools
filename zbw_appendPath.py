@@ -20,7 +20,7 @@ def appendUI():
     if cmds.window("appendPath", exists=True):
         cmds.deleteUI("appendPath")
 
-    widgets["win"] = cmds.window("appendPath", t="zbw_appendPath", w=500, h=190, s=False)
+    widgets["win"] = cmds.window("appendPath", t="zbw_appendPath", w=500, h=210, s=False)
 
     #create some menus for saving and loading
     cmds.setParent(widgets["win"])
@@ -30,7 +30,7 @@ def appendUI():
     cmds.menuItem(l="Save Add Paths", c=saveValues)
     cmds.menuItem(l="Load Add Paths", c=loadValues)
 
-    widgets["tabLO"] = cmds.tabLayout(h=190)
+    widgets["tabLO"] = cmds.tabLayout(h=210)
     widgets["columnLO"] = cmds.columnLayout("Add Paths", w=500)
     widgets["path1"] = cmds.textFieldButtonGrp(l="path1", cal=[(1, "left"), (2,"left"),(3,"left")], cw3=(40, 410, 50), bl="<<<", bc=partial(addToField, 1))
     widgets["path2"] = cmds.textFieldButtonGrp(l="path2", cal=[(1, "left"), (2,"left"),(3,"left")], cw3=(40, 410, 50), bl="<<<", bc=partial(addToField, 2))
@@ -69,7 +69,7 @@ def appendUI():
 
 
     cmds.showWindow(widgets["win"])
-    cmds.window(widgets["win"], e=True, w=500, h=190)
+    cmds.window(widgets["win"], e=True, w=500, h=210)
 
 def apply(*args):
     append()

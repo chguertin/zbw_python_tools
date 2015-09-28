@@ -12,6 +12,7 @@ import maya.OpenMaya as om
 import math
 from functools import partial
 import maya.mel as mel
+#import zbw_undoable
 
 #TO-DO----------------option to turn filtering on/off
 #TO-DO----------------add help menu with popup to describe situation
@@ -277,6 +278,7 @@ def getLocalValues(obj, *args):
     return obj_values
     #return (tx, ty, tz, rx, ry, rz)
 
+#@zbw_undoable.undoable
 def pullDownAnim(*args):
     """this is the function that does the anim pulldown based on stuff in the lists"""
 
@@ -445,8 +447,6 @@ def pullDownAnim(*args):
                 cmds.cutKey(mCtrl, at=["tx", "ty", "tz", "rx", "ry", "rz"])
             except:
                 cmds.warning("Tried to cut keys on master, but couldn't")
-
-
 
 def animPullDown():
     """Use this to start the script!"""

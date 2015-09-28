@@ -311,5 +311,5 @@ class RibbonUI(win.Window):
 
 
 
-def zbw_ribbon():
+def ribbon():
 	ribbon = RibbonUI()
